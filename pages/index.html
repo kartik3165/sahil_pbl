@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/index.css">   
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/logo.png" alt="" style="background-color: aliceblue;">
+            <h1>FitLife</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/pages/index.html" class="active" >HOME</a></li>
+                <li><a href="/pages/about.html">ABOUT</a></li>
+                <li><a href="/pages/classes.html">CLASSES</a></li>
+                <li><a href="/pages/trainer.html">TRAINERS</a></li>
+                <li><a href="/pages/contact.html">CONTACT</a></li>
+                <li><a href="/pages/services.html">SERVICES</a></li>
+                <button class="login-btn" onclick="openForm()"> SignUp / Login </button>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Welcome to FitLife</h1>
+        <span> Follow Video For Reference </span>
+        <div class="box-container">
+            <div class="box" onclick="window.location.href='https://youtu.be/XBVloY1H90c?si=UvaWcCdaNJS822rd'">
+                <div class="box-thumbnail" style="background-image: url('https://img.youtube.com/vi/XBVloY1H90c/0.jpg')"></div>
+                <h2>Box 1</h2>
+                <p>Content of Box 1</p>
+            </div>
+            <div class="box" onclick="window.location.href='https://youtu.be/Jpxc0TUr9BI?si=A-c-OoPX89Q8jzDO'">
+                <div class="box-thumbnail" style="background-image: url('https://img.youtube.com/vi/Jpxc0TUr9BI/0.jpg')"></div>
+                <h2>Box 2</h2>
+                <p>Content of Box 2</p>
+            </div>
+            <div class="box" onclick="window.location.href='https://youtu.be/stuPkzWMdIg?si=APRWpYXUv0orb4X8'">
+                <div class="box-thumbnail" style="background-image: url('https://img.youtube.com/vi/stuPkzWMdIg/0.jpg')"></div>
+                <h2>Box 3</h2>
+                <p>Content of Box 3</p>
+            </div>
+            <div class="box" onclick="window.location.href='https://youtu.be/30PqX2zvK88?si=RINpi4zQyjIqFSqh'">
+                <div class="box-thumbnail" style="background-image: url('https://img.youtube.com/vi/30PqX2zvK88/0.jpg')"></div>
+                <h2>Box 4</h2>
+                <p>Content of Box 4</p>
+            </div>
+        </div>
+
+        <!-- Additional sections in a row -->
+        <div class="row">
+            <!-- Image section -->
+            <div class="image-section">
+                <h2>Additional Image Section</h2>
+                <div class="image-slides" id="imageContainer" >
+                    <img src="/img/work1.jpg" alt="Example Image 1" id="mainImage">
+                </div>
+            </div>
+
+            <!-- Writing section -->
+            <div class="writing-section">
+                <h2>Additional Writing Section</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat felis a nisi suscipit, in accumsan quam luctus. Vivamus nec malesuada nulla. Nulla facilisi. Proin fermentum eleifend eros, id ullamcorper felis ultrices non.</p>
+                <p>Sed nec quam non nulla pellentesque suscipit. Cras pharetra quam eu ligula tempus, at venenatis mi accumsan. Aliquam id convallis odio. Ut nec velit sit amet turpis euismod fermentum. Quisque fermentum sit amet nulla ac sollicitudin.</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form-popup" id="myForm">
+          <form class="form-container">
+            <h1>Login/Signup</h1>
+      
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </div>
+
+    <div class="footer">
+        <p>&copy; 2024 FitLife. All rights reserved.</p>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+</html>
